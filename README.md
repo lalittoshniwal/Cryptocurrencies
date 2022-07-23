@@ -26,7 +26,7 @@ The data I provided was not ideal, so it needed to be processed to fit the machi
 
 3. I then used the K-means algorithm to create an elbow curve using hvPlot to find the best value for K from the new_pcs_df DataFrame I created above. Then, I ran the K-means algorithm to predict the K clusters for the cryptocurrencies’ data. I also created a new DataFrame named clustered_df by concatenating the crypto_df and new_pcs_df DataFrames on the same columns.
 
-<img src="/Resources/elbow_cruve.png" >
+<img src="/Resources/elbow_curve.png" >
 
 <img src="/Resources/clustered_df.png" >
 
