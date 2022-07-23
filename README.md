@@ -1,12 +1,12 @@
 # Cryptocurrencies
 
 ## Purpose
-The purpose of this exercise was to prepare an analysis for an investment bank who is preparing to get into the cryptocurrency market. The bank is interested in offering a new cryptocurrency investment portfolio for its customers. However, the company is lost in the vast universe of cryptocurrencies. I was tasked to create a report that includes what cryptocurrencies are on the trading market and how they could be grouped to create a classification system for this new investment.
+The purpose of this exercise was to prepare an analysis for an investment bank that is preparing to get into the cryptocurrency market. The bank is interested in offering a new cryptocurrency investment portfolio for its customers. However, the company is lost in the vast universe of cryptocurrencies. I was tasked to create a report that includes what cryptocurrencies are on the trading market and how they could be grouped to create a classification system for this new investment.
 
 The data I provided was not ideal, so it needed to be processed to fit the machine learning models. Since there is no known output I decided to use unsupervised learning. To group the cryptocurrencies, I decided on a clustering algorithm. I then used data visualizations to share my findings with the board.
 
 ## Analysis
-1. I first preprocessed the data for for Principal Component Analysis (PCA). The following five preprocessing steps were performed on the DataFrame that was created by reading in provided CSV:
+1. I first preprocessed the data for Principal Component Analysis (PCA). The following five preprocessing steps were performed on the DataFrame that was created by reading in provided CSV:
     - All cryptocurrencies that are not being traded were removed
     - The IsTrading column was dropped
     - All the rows that have at least one null value were removed
@@ -31,7 +31,7 @@ The data I provided was not ideal, so it needed to be processed to fit the machi
 <img src="/Resources/clustered_df.png" >
 
 4. I then visualized the results as follows:
-    - The clusters was plotted using a 3D scatter plot, and each data point shows the CoinName and Algorithm on hover
+    - The clusters were plotted using a 3D scatter plot, and each data point shows the CoinName and Algorithm on hover
 
 <img src="/Resources/cluster_plot.png" >
 
@@ -43,9 +43,9 @@ The data I provided was not ideal, so it needed to be processed to fit the machi
 
 <img src="/Resources/final_df.png" >
 
-    - A hvplot scatter plot was created where the X-axis was "TotalCoinsMined", the Y-axis was "TotalCoinSupply", the data was ordered by "Class", and it showed the    CoinName when hover over the data point
+    - A hvplot scatter plot was created where the X-axis was "TotalCoinsMined", the Y-axis was "TotalCoinSupply", the data was ordered by "Class", and it showed the    CoinName when hovering over the data point
 
 <img src="/Resources/hvplot_scatter.png" >
 
 ## Conclusion
-
+I was able to successfully create four clusters of cryptocurrencies (as analyzed by K-means) using the three principal components. However, the clusters of not equal in size and need further investigation to understand the differences between them.
